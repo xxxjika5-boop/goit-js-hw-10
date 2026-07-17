@@ -74,7 +74,7 @@ startBtn.addEventListener("click", () => {
 // ---------------- HELPERS ----------------
 
 function updateTimerUI({ days, hours, minutes, seconds }) {
-  daysEl.textContent = days;
+  daysEl.textContent = addLeadingZero(days);
   hoursEl.textContent = addLeadingZero(hours);
   minutesEl.textContent = addLeadingZero(minutes);
   secondsEl.textContent = addLeadingZero(seconds);
